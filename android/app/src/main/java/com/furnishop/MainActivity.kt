@@ -1,14 +1,14 @@
 package com.furnishop
 
-import android.os.Bundle;
+import android.os.Bundle; // SPLASH SCREEN. STEP 3
 import com.facebook.react.ReactActivity
 import com.facebook.react.ReactActivityDelegate
 import com.facebook.react.defaults.DefaultNewArchitectureEntryPoint.fabricEnabled
 import com.facebook.react.defaults.DefaultReactActivityDelegate
-import org.devio.rn.splashscreen.SplashScreen;
+import org.devio.rn.splashscreen.SplashScreen; // SPLASH SCREEN. STEP 3
 
 class MainActivity : ReactActivity() {
-  override fun onCreate(savedInstanceState: Bundle?) {
+  override fun onCreate(savedInstanceState: Bundle?) { // SPLASH SCREEN. STEP 3 - REPLACE THE PREVIOUS onCreate FUNCTION WITH THIS ONE
     SplashScreen.show(this);
     super.onCreate(savedInstanceState);
   }

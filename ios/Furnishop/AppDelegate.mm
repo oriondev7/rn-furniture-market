@@ -1,7 +1,7 @@
 #import "AppDelegate.h"
 
 #import <React/RCTBundleURLProvider.h>
-#import "RNSplashScreen.h"
+#import "RNSplashScreen.h" // SPLASH SCREEN. STEP 3
 
 @implementation AppDelegate
 
@@ -12,11 +12,11 @@
   // They will be passed down to the ViewController used by React Native.
   self.initialProps = @{};
 
-  bool didFinish = [super application:application didFinishLaunchingWithOptions:launchOptions];
+  bool didFinish = [super application:application didFinishLaunchingWithOptions:launchOptions]; // SPLASH SCREEN. STEP 3
   
-  [RNSplashScreen show];  // this needs to be called after [super application:application didFinishLaunchingWithOptions:launchOptions];
+  [RNSplashScreen show]; // SPLASH SCREEN. STEP 3 - this needs to be called after [super application:application didFinishLaunchingWithOptions:launchOptions]; 
   
-  return didFinish;
+  return didFinish; // SPLASH SCREEN. STEP 3
 }
 
 - (NSURL *)sourceURLForBridge:(RCTBridge *)bridge
